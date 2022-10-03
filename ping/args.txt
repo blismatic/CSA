@@ -1,0 +1,26 @@
+-nf -q
+
+===========================================================
+The first line in this file will be used as the command   =
+line arguments for the `ping.py` python script. Anything  =
+below the first line of this file will be ignored, and is =
+simply to help you understand what command line arguments =
+you can provide to the script.                            =
+===========================================================
+
+usage: ping.py [-h] [-nf] [-q] [file]
+
+Ping a list of IPs, and return the results in a text file
+
+positional arguments:
+  file               file to read IPs from
+
+options:
+  -h, --help         show this help message and exit
+  -nf, --no_outfile  do not generate a text file
+  -q, --quiet        only print the summary
+
+========================================================================
+
+If the [file] argument is not provided, the script will default
+to searching for a file named "LAKEWOOD SWITCHES - Sheet1.csv"
